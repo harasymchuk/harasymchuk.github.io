@@ -1,0 +1,152 @@
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+
+.container {
+    max-width: 1020px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+    background-image: url(../images/index/nharasymchuk_letterhead_3.jpg);
+    background-size: cover;
+    background-position: center;
+    /*останні три для розтягування заднього фону і центрування*/
+}
+
+.content.content-re {
+    background-image: none;
+    background-color: #ccc;
+}
+
+.header {
+    height: 100px;
+    color: rgb(177, 141, 89);
+    background-color: rgb(58, 58, 58);
+    padding-top: 15px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner img {
+    width: 250px;
+    /* border: 1px solid #fff; */
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+li {
+    padding: 0 10px;
+    /*відстань між елементами списку*/
+}
+
+li a {
+    color: rgb(177, 141, 89);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.active {
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid rgb(58, 58, 58);
+    margin-bottom: 10px;
+    padding: 30px 40px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.resume__img,
+.experience__img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume__img img {
+    width: 400px;
+    height: 300px;
+}
+
+.experience__img img {
+    width: 300px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(177, 141, 89);
+    text-align: justify;
+}
+
+.footer {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    color: rgb(177, 141, 89);
+    background-color: rgb(58, 58, 58);
+}
+
+.footer span {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.footer span a {
+    font-weight: 700;
+    color: rgb(242, 215, 178);
+}
